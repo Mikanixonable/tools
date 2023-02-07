@@ -1,0 +1,1 @@
+potrace.exe -s *.bmp
