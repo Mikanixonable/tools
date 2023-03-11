@@ -6,8 +6,8 @@ endCode =  "1342f"
 from pathlib import Path
 from PIL import Image, ImageFont, ImageDraw
     
-data_dir = Path(r'C:\SDtool\c\egy')
-font_file = r'seguihis'
+data_dir = Path(r'C:\SDtool\c\ty')
+font_file = r'C:\SDtool\wof\NotoSans-Bold.ttf'
 font_size = 400
 font = ImageFont.truetype(font=font_file, size=font_size, index=0)
 background_color = (255, 255, 255)
