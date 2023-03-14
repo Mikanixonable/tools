@@ -9,7 +9,7 @@ with open("./fontkit/jouyou3.txt", encoding="utf-8") as f:
     text = f.read()
 
 data_dir = Path(r'C:\SDtool\c\6')
-font_file = r'C:\SDtool\c\wof\SourceHanSans-Normal.otf'
+font_file = r'C:\SDtool\c\wof\SourceHanSans-Medium.otf'
 font_size = 512
 font = ImageFont.truetype(font=font_file, size=font_size, index=0)
 background_color = (255, 255, 255)
