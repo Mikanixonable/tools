@@ -1,5 +1,5 @@
 """
-png画像からttfフォントを作るプログラム。nymwaさんのkwahiに触発されて作った https://github.com/nymwa/ttf-twahi
+png画像からttfフォントを作るプログラム。nymwaさんのtwahiに触発されて作った https://github.com/nymwa/ttf-twahi
 
 ※このプログラムはfontforgeモジュールを使うため
 fontforge-console.batを開くと出るCUIから使う(後述)
