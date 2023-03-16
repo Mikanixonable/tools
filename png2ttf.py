@@ -1,5 +1,5 @@
 """
-png画像からttfフォントを作るプログラム。nymwaさんのtwahiに触発されて作った https://github.com/nymwa/ttf-twahi
+png画像を二値化してttfフォントを作るプログラム。nymwaさんのtwahiに触発されて作った https://github.com/nymwa/ttf-twahi
 
 ※このプログラムはfontforgeモジュールを使うため
 fontforge-console.batを開くと出るCUIから使う(後述)
@@ -40,8 +40,7 @@ macやlinuxユーザーならCUIを開かなくてもaptコマンドとかで普
 """
 import os
 import glob
-import fontforge as fontforge
-
+import fontforge
 # make new font
 font = fontforge.font()
 # 名前の設定
@@ -66,6 +65,7 @@ for index, name in enumerate(names):
 
     os.system("del " + name+".bmp") #Tatsutori atowo nigosazu
     os.system("del " + name+".svg")
+    print(str(index + 1)+"/"+str(len(names)))
 
 font.generate(fontname + '.ttf')
 font.close()
